@@ -1,0 +1,148 @@
+.slider {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  top: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0px;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.caption {
+  position: absolute;
+  top: 390px;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 22px;
+  font-weight: 300;
+  animation: fadeIn 2s ease-in-out;
+  z-index: 3;
+  text-shadow: 1px 1px 2px rgb(21, 21, 21, .5);
+}
+
+.caption .model {
+  font-weight: 500;
+  font-size: 36px;
+  z-index: 3;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.controls {
+  position: absolute;
+  bottom: 20px;
+  left: 15%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.controls button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 767px) {
+  .controls {
+    position: absolute;
+    bottom: 10px;
+    left: 25%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: left;
+    align-items: left;
+  }
+  .controls button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .slider {
+    height: 300px;
+  }
+  .caption {
+    position: absolute;
+    top: 210px;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+    animation: fadeIn 2s ease-in-out;
+    z-index: 3;
+  }
+  
+  .caption .model {
+    font-weight: 500;
+    font-size: 36px;
+    z-index: 3;
+  }
+}
+@media (max-width: 767px) {
+  .slider {
+    height: 220px;
+  }
+  .caption {
+    text-align: left;
+    position: absolute;
+    top: 150px;
+    left: 130px;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+    animation: fadeIn 2s ease-in-out;
+    z-index: 3;
+  }
+  .controls button {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+  .controls {
+    position: absolute;
+    bottom: 10px;
+    left: 77%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: left;
+    align-items: left;
+  }
+}

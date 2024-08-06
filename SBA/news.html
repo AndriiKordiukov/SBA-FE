@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Honda 2024</title>
+    <link type="Image/x-icon" href="img/favicon.png" rel="icon">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/news.css">
+    <script src="jss/script.js" async defer></script>
+    <script src="jss/news.js" async defer></script>
+  
+  </head>
+  <body>
+    <nav id="myNav" class="nav-bar">
+      <a id="home-btn" href="honda.html">
+        <img class="logo" id="honda-logo" src="img/logo-white.png" alt="honda-logo">
+      </a>
+      <a href="explore.html">Explore</a>
+      <a href="news.html">News</a>
+      <a href="maintenance.html">Maintenance</a>
+      <div class="dropdown">
+        <button class="dropdown-btn">
+          Models
+        </button>
+        <div class="dropdown-content">
+          <a href="news.html#civic-link">Civic</a>
+          <a href="news.html#accord-link">Accord</a>
+          <a href="news.html#cr-v-link">CR-V</a>
+          <a href="news.html#odyssey-link">Odyssey</a>
+        </div>
+      </div>
+      <div class="icon" onclick="toggleNavBar()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    
+    <div class="content-container">
+      <!-- MODAL -->
+      <div id="modal" class="modal">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+      </div>
+      <div id="overlay" class="overlay"></div>
+      <!-- Your main content here -->
+      <div id="civic-link" class="news-card">
+        <div class="news-card-image">
+          <img src="img/Civic/2025-honda-civic-3.png" alt="Honda News 1">
+          <h2 class="news-card-title">New Honda Civic Model Unveiled</h2>
+        </div>
+        <div class="news-card-content">
+          <p class="news-card-excerpt">Honda will add hybrid models to one of America’s favorite vehicles when the 2025 Civic compact goes on sale shortly.</p>
+          <button class="news-card-toggle">Read More</button>
+          <div class="news-card-full-text">
+            <p><b>2025 Honda Civic trim levels:</b></p>
+            <ul>
+              <li>LX</li>
+              <li>Sport</li>
+              <li>Sport Hybrid</li>
+              <li>Sport Touring Hybrid</li>
+            </ul><hr>
+            <p>Civic hybrid prices will start under $30,000. The hybrid will be available on both sedan and hatchback body styles.
+
+              Honda expects hybrids to account for around 40% of U.S. Civic sales, which totaled 200,381 in 2023.
+              
+              The automaker promises a combined city/highway EPA fuel economy rating “nearing 50 mpg.” That would constitute an improvement around 40% versus a 2024 Civic sedan with the 2.0 liter gasoline engine.</p>
+              <!-- <img src="img/news/1/civic1.webp" alt="civic"> -->
+              <div class="container">
+                <img src="img/news/1/civic1.webp" alt="civic" class="image" onclick="openModal(this)">
+              </div>
+              
+              <h2>Most powerful Civic ever built</h2>
+              <p>With 200 horsepower and 232 pound-feet of torque, the 2025 Civic hybrid is the most powerful Civic ever built, save the radical Type R, which sells for around $45,000 and has a turbocharged 315 horsepower engine. It uses the same combination of a 2.0 liter engine and continuously variable transmission as the Accord and CR-V hybrids.</p> <p>
+                The hybrids and the rest of the 2025 Civic lineup also get new features and minor styling tweaks to remain competitive with compacts like the Toyota Corolla, Hyundai Elantra, Kia, Mazda 3 and Nissan Sentra. Hybrid versions of the 2024 Elantra and Corolla scored city/highway ratings of 54 and 47 mpg in EPA tests.</p>
+                <div class="container">
+                  <img src="img/news/1/civic2.webp" alt="civic" class="image" onclick="openModal(this)">
+                </div>
+              <p>The Civic uses Honda’s established two-motor electric system. The automaker isn’t saying what gasoline engine it will use, but expect a continuously variable automatic transmission.</p>
+              <div class="container">
+                <img src="img/news/1/civic3.webp" alt="civic" class="image" onclick="openModal(this)">
+              </div>
+              <p>The hybrid system will offer four levels of regenerative braking, which recaptures energy for the battery when the vehicle slows down. Paddles on the steering wheel control the level of regeneration.</p>
+              <p>Honda says specially tuned springs and shock absorbers and a tire developed for the hybrid will contribute to responsive handling and low levels of noise and vibration</p>
+              <div class="container">
+                <img src="img/news/1/civic4.webp" alt="civic" class="image" onclick="openModal(this)">
+              </div>
+              <h2>The return of a popular hybrid</h2>
+              <p>The new hybrid fills an important spot in Honda’s lineup, boosting the efficiency of a popular model as the automaker begins to roll out its electric vehicles.</p>
+              <p>Honda stopped selling the previous Civic hybrid after the 2015 model year. Honda sold another compact hybrid in the 2019-21 model years, Insight hybrid. That’s the second time Honda has mothballed the Insight name, which revolutionized the auto industry when it introduced the first hybrid gasoline-electric powertrain as a 2000 model.</p>
+              <p><em>“The new Civic hybrid is a perfectly-timed addition to the Honda lineup as hybrid-electric sales continue to grow, providing Honda with an important building block toward 100% zero-emissions vehicle sales by 2040,” Honda vice president Lance Woelfer said. “Honda hybrid-electric models represented over one-quarter of our overall brand sales in 2023.”</em></p>
+              <p>Honda’s 2.0 liter four-cylinder gasoline engine will power EX and Sport models of the 2025 Civic.</p>
+              <div class="container">
+                <img src="img/news/1/dashboard.webp" alt="civic" class="image" onclick="openModal(this)">
+              </div>
+              <button id="hide">Hide</button>
+          </div>
+        </div>
+      </div>
+      <div id="accord-link" class="news-card">
+        <div class="news-card-image">
+          <img src="img/Accord/Accord-2025.png" alt="Honda News 2">
+          <h2 class="news-card-title">2024 Honda Accord Hybrid</h2>
+        </div>
+        <div class="news-card-content">
+          <p class="news-card-excerpt">Fresh off a redesign for the 2023 model year, the Honda Accord Hybrid remains an upscale and accessible hybrid car that's fuel-efficient, easy to drive and easy to love.</p>
+          <button class="news-card-toggle">Read More</button>
+          <div class="news-card-full-text">
+            <p><b>2024 Honda Accord trim levels:</b></p>
+            <ul>
+              <li>Sport</li>
+              <li>EX-L</li>
+              <li>Sport L</li>
+              <li>Touring</li>
+            </ul><hr>
+            <p>The 2024 Honda Accord Hybrid's #4 ranking is based on its score within the Hybrid Cars category. Currently the Honda Accord Hybrid has a score of 8.2 out of 10, which is based on our evaluation of 16 pieces of research and data elements using various sources.</p>
+              <!-- <img src="img/news/1/civic1.webp" alt="civic"> -->
+              <div class="container">
+                <img src="img/Accord/Accord-2025-2.png" alt="civic" class="image" onclick="openModal(this)">
+              </div>
+              <h2>Expert Rating</h2>
+              <p>Our rating is established through qualitative research and analysis of Honda Accord Hybrid reviews, as well as hard data points that speak to the Accord Hybrid’s safety, reliability, fuel economy and cargo capacity. This rating is continually updated based on the latest information that comes in from our research and data sources.</p>
+                <div class="container">
+                  <img src="img/Accord/Accord-2025-3.png" alt="civic" class="image" onclick="openModal(this)">
+                </div>
+              <h2>Drive & Performance</h2>
+              <div class="container">
+                <img src="img/Accord/Accord-2025-4.png" alt="civic" class="image" onclick="openModal(this)">
+              </div>
+              <p>The Accord Hybrid has a comfortable, smooth ride, and the suspension easily absorbs most road imperfections. The Accord's driving dynamics are about what you'd expect (and want) from a commuter or family car: polished and predictable, though not particularly exciting. The steering is responsive and nicely balanced, and the brakes are strong.</p>
+              <p>As far as fuel-efficient commuter cars go, the 2024 Accord Hybrid holds a spot among the best. It comes with a 204-horsepower hybrid powertrain, front-wheel drive and a continuously variable automatic transmission (CVT). The powertrain can whisk the car up to highway speeds reasonably quickly, and it provides enough passing power to instill confidence.</p>
+              <h2>Fuel Economy</h2>
+              <div class="container">
+                <img src="img/Accord/Accord-2025-5.png" alt="civic" class="image" onclick="openModal(this)">
+              </div>
+              <p>Most 2024 Accord Hybrid models get an EPA-estimated 46 mpg in the city and 41 mpg on the highway. The EX-L trim gets 51/44 mpg city/highway. These estimates are very good for a midsize car but fall behind several hybrid sedan competitors.</p>
+              
+              <h2>Interior</h2>
+              <div class="container">
+                <img src="img/Accord/Accord-2025-i1.png" alt="civic" class="image" onclick="openModal(this)">
+              </div>
+              <p>The 2024 Honda Accord Hybrid has one of the nicest interiors in the segment. The design is simple and understated but not underwhelming. There are few low-rent materials, and the overall fit and finish is solid. There are soft-touch surfaces throughout the cabin, and the dash has a pleasant honeycomb design that expertly conceals the air vents without diminishing their usefulness. The Accord Hybrid seats five people. The seats are comfortable, though not overly luxurious, and there's ample legroom for all passengers. Headroom in the rear is a little tight for taller passengers, however.</p>
+              <h2>Conclusion</h2>
+              <div class="container">
+                <img src="img/Accord/Accord-2025-i2.png" alt="civic" class="image" onclick="openModal(this)">
+              </div>
+              <p>The 2024 Honda Accord Hybrid receives a critics' rating that is very good for the class. This rating, which is driven by our qualitative research, represents the overall tone and recommendation level that the automotive press places on a car.</p>
+              <button id="hide">Hide</button>
+          </div>
+        </div>
+      </div>
+      <!-- CR-V NEWS -->
+      <div id="accord-link" class="news-card">
+        <div class="news-card-image">
+          <img src="img/CR-V/CR-V-2.png" alt="Honda News 3">
+          <h2 class="news-card-title">2025 Honda CR-V Price Increased Up To $600</h2>
+        </div>
+        <div class="news-card-content">
+          <p class="news-card-excerpt">onda is bringing the 2025 Honda CR-V and CR-V Hybrid to dealerships without any major changes and a small price increase..</p>
+          <button class="news-card-toggle">Read More</button>
+          <div class="news-card-full-text">
+            <p><b>2025 Honda CR-V</b></p>
+            <p>According to the latest order guide data, the 2025 Honda CR-V will have a starting MSRP of $30,100 (prices don't include destination), which is $600 more than in 2024. Pricing for the 2025 CR-V Hybrid will start at $34,350, representing a price increase of $300 from before.</p>
+              <!-- <img src="img/news/1/civic1.webp" alt="civic"> -->
+              <div class="container" id="1">
+                <img src="img/CR-V/CR-V-i1.png" alt="civic" class="image" onclick="openModal(this)">
+              </div>
+              <p>While the base 2025 Honda CR-V LX receives a $600 increase for the new model year, the EX and EX-L trim are getting a $340 increase. With the price hike, the CR-V EX will start at $32,350 and the EX-L will cost $35,000. All-wheel drive is an additional $1,500, pushing the 2025 CR-V EX-L’s price tag up to $36,500.</p>
+              <div class="container">
+                <img src="img/CR-V/CR-V-i3.png" alt="civic" class="image" onclick="openModal(this)">
+              </div>
+              <p>Unlike the gas-powered CR-V, which sees the largest price increase for the base trim, the 2025 Honda CR-V Hybrid follows the opposite pricing structure. Its base trim sees the smallest price increase. Compared to the 2024 model, the 2025 CR-V Hybrid is only going up by $300 to $34,350 for the Sport trim. The mid-level Sport-L trim also gets a $300 price increase to start at $37,350. The range-topping Sport Touring, which is only available with AWD, now starts at $40,800. That represents an increase of $600 and is the highest increase for the 2025 CR-V Hybrid.</p>
+              <div class="container">
+                <img src="img/CR-V/CR-V-i4.png" alt="civic" class="image" onclick="openModal(this)">
+              </div>
+              <p>The gas-powered CR-V and the electrified CR-V Hybrid are two of the better options in the compact segment, but the price increases may have shoppers looking toward more affordable options.</p>
+              <button id="hide">Hide</button>
+          </div>
+        </div>
+      </div>
+       <!-- END CONTENT -->
+      </div>
+    
+
+    <div class="footer-container">
+      <!-- Your footer content here -->
+       <div class="fLogo">
+        <a href="/">
+          <img class="f-logo" src="/SBA/img/logo.png" alt="honda"
+          style="display: block; margin: 0 auto;">
+        </a>
+       </div>
+       <p>Copyright &copy; 2024</p>
+    </div>
+    
+  </body>
+</html>

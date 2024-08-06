@@ -1,0 +1,285 @@
+/* @import "slider.css"; */
+@import "footer.css";
+@import "navbar.css";
+@import "content.css";
+
+/* @media (max-width: 767px) {
+  .news-card {
+    min-width: 370px;
+  }
+  .news-card-title {
+    position: absolute;
+    top: 220px;
+    left: 20px;
+    font-size: 32px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+} */
+.news-card {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+
+@media (max-width: 480px) {
+  .news-card-title {
+    position: absolute;
+    top: 73%;
+    left: 20px;
+    font-size: 1.3rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+  .news-card-image {
+    position: relative;
+    max-height: 270px;
+    /* min-width: 350px; */
+    overflow: hidden;
+  }
+  .news-card {
+    min-width: 350px;
+    max-width: 420px;
+  }
+  .content-container{
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    padding-left: 3.2%;
+  }
+}
+
+@media (min-width: 481px) {
+  .news-card {
+    min-width: 500px;
+  }
+  .news-card-image {
+    height: 450px;
+  }
+  .news-card-content p {
+    font-size: 1.4rem;
+  }
+  .news-card-title {
+    margin-top: 180px;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    font-size: 32px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+  .news-card-image {
+    position: relative;
+    max-height: 300px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 769px) {
+  .news-card {
+    min-width: 500px;
+  }
+  .news-card-image {
+    height: 450px;
+  }
+  .news-card-content p {
+    font-size: 1.4rem;
+  }
+  .news-card-title {
+    margin-top: 180px;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    font-size: 32px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+  .news-card-image {
+    position: relative;
+    max-height: 300px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 1080px) {
+  .news-card {
+    min-width: 500px;
+  }
+  .news-card-image {
+    height: 550px;
+  }
+  .news-card-content p {
+    font-size: 1.5rem;
+  }
+  .news-card-title {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    font-size: 32px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+  .news-card-image {
+    position: relative;
+    max-height: 300px;
+    overflow: hidden;
+  }
+}
+.news-card-image img {
+  /* min-width: 500px; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* TITLE */
+
+
+.news-card-content {
+  padding: 20px;
+}
+
+.news-card-excerpt {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.news-card-content p {
+  font-size: 1.2rem;
+}
+
+.news-card-toggle,
+#hide {
+  display: block;
+  margin-top: 10px;
+  background-color: #6482AD;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+#hide{
+  margin: 25px auto 0px auto;
+  background-color: #7FA1C3;
+  font-size: 1.2rem;
+}
+.news-card-full-text {
+  display: none;
+  margin-top: 20px;
+}
+
+.news-card-full-text.show {
+  display: block;
+  animation: new 0.7s;
+}
+
+.news-card-full-text.show p {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.news-card-toggle.active {
+  background-color: #0056b3;
+}
+
+
+/* picture animations */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 2;
+  display: none;
+  
+}
+
+.container.blurred {
+  filter: blur(10px);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+.image {
+  max-height: 350px;
+  /* min-width: 500px; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  display: block;
+  margin: 150px auto;
+  max-width: 90%;
+  max-height: 80%;
+  animation: appear 0.6s;
+  position: relative;
+}
+
+.close-button {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 160px;
+  right: 10%;
+  z-index: 10;
+  cursor: pointer;
+  animation: appear 1s;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #aaa;
+  text-decoration: none;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform:scale(0);
+  }
+  to {
+    opacity: 1;
+    transform:scale(1);
+  }
+}
+
+@keyframes new {
+  from {
+    opacity: 0;
+  
+  }
+  to {
+    opacity: 1;
+
+  }
+}

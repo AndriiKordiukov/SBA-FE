@@ -1,0 +1,28 @@
+@import "slider.css";
+@import "footer.css";
+@import "cards.css";
+
+.text {
+  position: relative;
+  top: 0px;
+  margin-top: 15px;
+  display: block;
+  max-width: 90%;
+  margin: 25px;
+  margin-left: 5%;
+  font-size: 1.2rem;
+  
+}
+.content-container {
+  display: block;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.prices-table h2{
+  text-align: center;
+}

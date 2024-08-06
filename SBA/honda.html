@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Honda 2024</title>
+    <link type="Image/x-icon" href="img/favicon.png" rel="icon" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/content.css" />
+    <script src="jss/script.js" async defer></script>
+    <script src="jss/sliders.js" async defer></script>
+  </head>
+  <body>
+    <nav id="myNav" class="nav-bar">
+      <a id="home-btn" href="#">
+        <img
+          class="logo"
+          id="honda-logo"
+          src="img/logo-white.png"
+          alt="honda-logo"
+        />
+      </a>
+      <a href="explore.html">Explore</a>
+      <a href="news.html">News</a>
+      <a href="maintenance.html">Maintenance</a>
+      <div class="dropdown">
+        <button class="dropdown-btn">Models</button>
+        <div class="dropdown-content">
+          <a href="news.html#civic-link">Civic</a>
+          <a href="news.html#accord-link">Accord</a>
+          <a href="news.html#cr-v-link">CR-V</a>
+          <a href="news.html#odyssey-link">Odyssey</a>
+        </div>
+      </div>
+      <div class="icon" onclick="toggleNavBar()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <div class="content-container">
+      <!-- Your main content here -->
+
+      <div class="slider">
+        <div class="slide active">
+          <img src="img/Civic/2025-honda-civic.png" alt="Image 1" />
+          <div class="caption">
+            2025
+            <div class="model">Honda Civic</div>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/Accord/Accord-2025.png" alt="Image 2" />
+          <div class="caption">
+            2025
+            <div class="model">Honda Accord</div>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/CR-V/CR-V-1.png" alt="Image 3" />
+          <div class="caption">
+            2025
+            <div class="model">Honda CR-V</div>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/Oddysey/2025_Honda_Oddysey_1.png" alt="Image 4" />
+          <div class="caption">
+            2025
+            <div class="model">Honda Oddysey</div>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/honda-passport-2025.png" alt="Image 5" />
+          <div class="caption">
+            2025
+            <div class="model">Honda Passport</div>
+          </div>
+        </div>
+        <div class="controls">
+          <button id="prev">Prev</button>
+          <button id="pause-play">Pause</button>
+          <button id="next">Next</button>
+        </div>
+      </div>
+
+      <div class="text">
+        <p>
+          Honda is renowned for producing some of the most reliable, efficient,
+          and well-engineered automobiles on the market. With a legacy spanning
+          over 70 years, Honda has established itself as a leader in the
+          automotive industry, continuously innovating to deliver vehicles that
+          prioritize safety, performance, and customer satisfaction.
+        </p>
+        <p>
+          From the iconic Civic to the versatile Accord, Honda's lineup offers a
+          diverse range of models, each meticulously designed to provide a
+          exceptional driving experience.
+        </p>
+        <p>
+          Underpinned by a commitment to quality, Honda's vehicles are renowned
+          for their longevity, superior craftsmanship, and advanced
+          technologies, making them a trusted choice for drivers seeking a blend
+          of practicality, style, and peace of mind.
+        </p>
+      </div>
+
+      <div class="horizontal-card-block">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-caption">
+              <h3>2025 Honda Civic</h3>
+              <p>Turn up the fun</p>
+            </div>
+            <img src="img/Civic/2025-honda-civic-2.png" alt="Honda Civic" />
+            <button class="card-button">Learn More</button>
+          </div>
+          <div class="card">
+            <div class="card-caption">
+              <h3>2025 Honda Accord</h3>
+              <p>Elegant design, redefined</p>
+            </div>
+            <img src="img/Accord/Accord-2025-2.png" alt="Honda Accord" />
+            <button class="card-button">Learn More</button>
+          </div>
+          <div class="card">
+            <div class="card-caption">
+              <h3>2025 Honda CR-V</h3>
+              <p>All-around verastility</p>
+            </div>
+            <img src="img/CR-V/CR-V-2.png" alt="Honda CR-V" />
+            <button class="card-button">Learn More</button>
+          </div>
+          <div class="card">
+            <div class="card-caption">
+              <h3>2025 Honda Odyssey</h3>
+              <p>For all your family journeys</p>
+            </div>
+            <img
+              src="img/Oddysey/2025_Honda_Oddysey_2.png"
+              alt="Honda Odyssey"
+            />
+            <button class="card-button">Learn More</button>
+          </div>
+          <!-- Additional car cards here -->
+        </div>
+        <button class="scroll-left">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <button class="scroll-right">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+      <div class="prices-table">
+        <h2>Honda Models comparison table</h2>
+        <style></style>
+        <table>
+          <tr>
+            <th>Model</th>
+            <th>Body Style</th>
+            <th>Engine Type</th>
+            <th>Power</th>
+            <th>MPG</th>
+            <th>MSRP</th>
+          </tr>
+          <tr>
+            <td>Civic</td>
+            <td>Sedan</td>
+            <td>Hybrid</td>
+            <td>200 hp</td>
+            <td>48</td>
+            <td>$28,750</td>
+          </tr>
+          <tr>
+            <td>Accord</td>
+            <td>Sedan</td>
+            <td>Hybrid</td>
+            <td>204 hp</td>
+            <td>44</td>
+            <td>$32,895</td>
+          </tr>
+          <tr>
+            <td>CR-V</td>
+            <td>SUV</td>
+            <td>Hybrid</td>
+            <td>204 hp</td>
+            <td>40</td>
+            <td>$34,350</td>
+          </tr>
+          <tr>
+            <td>Odyssey</td>
+            <td>Minivan</td>
+            <td>Gas</td>
+            <td>280 hp</td>
+            <td>22</td>
+            <td>$41,920</td>
+          </tr>
+          <tr>
+            <td>Pilot</td>
+            <td>SUV</td>
+            <td>Gas</td>
+            <td>285 hp</td>
+            <td>21</td>
+            <td>$39,900</td>
+          </tr>
+          <tr>
+            <td>Ridgeline</td>
+            <td>Truck</td>
+            <td>Gas</td>
+            <td>280 hp</td>
+            <td>21</td>
+            <td>$39,750</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="footer-container">
+      <!-- Your footer content here -->
+      <div class="fLogo">
+        <a href="/">
+          <img
+            class="f-logo"
+            src="/SBA/img/logo.png"
+            alt="honda"
+            style="display: block; margin: 0 auto"
+          />
+        </a>
+      </div>
+      <p>Copyright &copy; 2024</p>
+    </div>
+  </body>
+</html>

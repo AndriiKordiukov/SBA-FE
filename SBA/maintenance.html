@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Honda 2024</title>
+    <link type="Image/x-icon" href="img/favicon.png" rel="icon">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/maintenance.css">
+    <link rel="stylesheet" href="css/vinform.css">
+    <script src="jss/script.js" async defer></script>
+    <script src="jss/news.js" async defer></script>
+    <script src="jss/vinapi.js" async defer></script>
+  
+  </head>
+  <body>
+    <nav id="myNav" class="nav-bar">
+      <a id="home-btn" href="/SBA/honda.html">
+        <img class="logo" id="honda-logo" src="img/logo-white.png" alt="honda-logo">
+      </a>
+      <a href="explore.html">Explore</a>
+      <a href="news.html">News</a>
+      <a href="maintenance.html">Maintenance</a>
+      <div class="dropdown">
+        <button class="dropdown-btn">
+          Models
+        </button>
+        <div class="dropdown-content">
+          <a href="news.html#civic-link">Civic</a>
+          <a href="news.html#accord-link">Accord</a>
+          <a href="news.html#cr-v-link">CR-V</a>
+          <a href="news.html#odyssey-link">Odyssey</a>
+        </div>
+      </div>
+      <div class="icon" onclick="toggleNavBar()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    
+    <div class="content-container">
+      <!-- Your main content here -->
+      <article>
+        
+        <h1>Routine Maintenance</h1>
+        <img src="img/maintenance.jpg" alt="honda maintenance">
+        <p>Regular maintenance is key to keeping your Honda running at its best. Follow these simple steps to stay on top of your vehicle's service needs:</p>
+    
+        <ul>
+          <li><b>Oil Changes</b> - Change your oil and filter every 5,000-10,000 miles for optimal engine performance and longevity.</li>
+          <li><b>Tire Rotations</b> - Rotate your tires every 5,000-10,000 miles to ensure even tread wear.</li>
+          <li><b>Brake Inspections</b> - Have your brakes checked regularly to identify any wear or issues early.</li>
+          <li><b>Fluid Checks</b> - Inspect and top off vital fluids like engine coolant, transmission fluid, and power steering fluid.</li>
+        </ul>
+    
+        <p>Staying on top of these basic maintenance items will help maximize your Honda's lifespan and maintain its value. Consult your owner's manual for the full maintenance schedule.</p>
+        
+        <div class="vehicle-info-form">
+          <h2 id="form-header">Find Auto by VIN number</h2>
+          <form id="vin-form">
+            <input type="text" id="vin-input" placeholder="Type VIN" required />
+            
+            <button id="check-vin" >Check</button>
+
+          </form>
+          
+          <div id="vin-error-message" class="invalid-feedback"></div>
+          <!-- RESULTS -->
+          <div id="vehicle-info" class="hidden">
+            <div class="info-item">
+              <img src="" alt="Contry" class="icon" />
+              <span class="info-label">Contry: </span>
+              <span class="info-value" id="vehicle-country"></span>
+            </div>
+            <div class="info-item">
+              <img src="" alt="year" class="icon" />
+              <span class="info-label">Year: </span>
+              <span class="info-value" id="vehicle-year"></span>
+            </div>
+            <div class="info-item" id="last-info-item">
+              <img src="" alt="region" class="icon" />
+              <span class="info-label">Region: </span>
+              <span class="info-value" id="vehicle-region"></span>
+            </div>
+          </div>
+          <button 
+            id="random-vin" 
+            onclick="getRandomVin">
+            Random VIN
+          </button>
+        </div>
+    
+        <h2>Maintenance Schedule</h2>
+        <p>Use the table below to stay on track with your Honda's recommended maintenance schedule:</p>
+    
+        <table>
+          <tr>
+            <th>Maintenance Item</th>
+            <th>Interval</th>
+          </tr>
+          <tr>
+            <td>Oil Change</td>
+            <td>Every 5,000-10,000 miles</td>
+          </tr>
+          <tr>
+            <td>Tire Rotation</td>
+            <td>Every 5,000-10,000 miles</td>
+          </tr>
+          <tr>
+            <td>Brake Inspection</td>
+            <td>Every 10,000 miles</td>
+          </tr>
+          <tr>
+            <td>Coolant Flush</td>
+            <td>Every 30,000 miles</td>
+          </tr>
+          <tr>
+            <td>Transmission Service</td>
+            <td>Every 30,000 miles</td>
+          </tr>
+          <tr>
+            <td>Spark Plug Replacement</td>
+            <td>Every 60,000 miles</td>
+          </tr>
+        </table>
+        
+        <h2>Honda Genuine Parts</h2>
+        <img src="img/Honda Genuine Parts.webp" alt="">
+        <p>When it's time for maintenance or repairs, always insist on Honda Genuine Parts. These are the same high-quality components used in the original manufacturing of your vehicle. They're designed to fit perfectly and maintain Honda's renowned safety and performance.</p>
+    
+        <button id="partsFinder">Find Honda Genuine Parts</button>
+    
+        <div id="partsFinderResults" style="display:none;">
+          Visit your local Honda dealer or <a href="#">order parts online</a> to get the genuine parts you need for your Honda.
+        </div>
+    
+        <script>
+          document.getElementById('partsFinder').addEventListener('click', function() {
+            document.getElementById('partsFinderResults').style.display = 'block';
+          });
+        </script>
+      
+      <section class="maintenance-tips">
+        <h2>Keep Your Honda Running Smoothly</h2>
+        <img src="img/smooth.webp" alt="">
+        <p>Regular maintenance is essential for prolonging the life of your Honda and ensuring optimal performance. Here are some essential tips:</p>
+    
+        <h3>Regular Check-ups</h3>
+        <p>Schedule regular check-ups at your local Honda dealership to address any potential issues early on.</p>
+    
+        <h3>Fluid Checks</h3>
+        <p>Monitor engine oil, coolant, brake fluid, and transmission fluid levels regularly.</p>
+    
+        <h3>Tire Maintenance</h3>
+        <p>Check tire pressure monthly and inspect for wear and tear.</p>
+    
+        <h3>Battery Care</h3>
+        <p>Ensure your battery terminals are clean and tight. Consider replacing the battery every 3-5 years.</p>
+    
+        <h3>Filter Replacements</h3>
+        <p>Replace air filters and cabin air filters as recommended in your owner's manual.</p>
+    
+        <h3>Additional Tips</h3>
+        <ul>
+            <li>Follow the maintenance schedule outlined in your owner's manual.</li>
+            <li>Use high-quality parts and fluids.</li>
+            <li>Listen for any unusual noises or changes in performance.</li>
+        </ul>
+    </section>
+    
+    <section class="maintenance-schedule">
+        <h2>Recommended Maintenance Schedule</h2>
+        </section>  
+      </article>
+       <!-- END CONTENT -->
+      </div>
+    
+
+    <div class="footer-container">
+      <!-- Your footer content here -->
+       <div class="fLogo">
+        <a href="/">
+          <img class="f-logo" src="/SBA/img/logo.png" alt="honda"
+          style="display: block; margin: 0 auto;">
+        </a>
+       </div>
+       <p>Copyright &copy; 2024</p>
+    </div>
+    
+  </body>
+</html>

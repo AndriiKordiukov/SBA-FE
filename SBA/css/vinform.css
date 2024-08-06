@@ -1,0 +1,72 @@
+.vehicle-info-form {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+#vin-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#vin-input {
+  flex-grow: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#vehicle-info {
+  display: none;
+}
+
+.info-value {
+ margin-left: 10px;
+ color: rgb(53, 31, 255);
+}
+
+.vehicle-info-form h2 {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+#vin-error-message {
+  color: rgb(186, 0, 0);
+  margin-top: -10px;
+  margin-left: 10%;
+}
+
+/* #last-info-item {
+  padding-bottom: 0;
+} */
+
+/* .hidden {
+  display: none;
+} */
+
+#check-vin {
+  margin-left: 10px;
+  border-radius: 5px;
+}
+#random-vin {
+  margin-top: 10px;
+  border-radius: 5px;
+}
