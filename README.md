@@ -26,7 +26,7 @@ A simple websites about Honda cars that contain some ~~usefull~~ information, ma
 - Built-in validation function
 - Random VIN Generator
 - Provides 3 real attribute of the car
-- AJAX API
+- AJAX (updating data without reloading page)
 
 ### Navigation bar 
 
